@@ -3,6 +3,8 @@ services:
     name: agente-licita-autopilot
     runtime: node
     rootDir: autopilot
+    buildCommand: npm install
+    startCommand: node server.js
     healthCheckPath: /health
     envVars:
       - key: NODE_VERSION
