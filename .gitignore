@@ -1,5 +1,7 @@
 node_modules/
-data/
 .env
 *.log
 public/*.png
+data/cards/
+data/*.json
+!data/posts.json
