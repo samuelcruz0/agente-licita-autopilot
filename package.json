@@ -1,0 +1,19 @@
+{
+  "name": "agente-licita-autopilot",
+  "version": "1.0.0",
+  "description": "Autopilot de social para o Agente Licita — agenda e publica cards no Instagram via Graph API da Meta",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test-smoke.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "node-fetch": "^2.7.0",
+    "sharp": "^0.33.5"
+  }
+}

@@ -1,0 +1,29 @@
+services:
+  - type: web
+    name: agente-licita-autopilot
+    runtime: node
+    rootDir: autopilot
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: 22.11.0
+      - key: PORT
+        value: 8130
+      - key: META_PAGE_TOKEN
+        sync: false
+      - key: META_IG_USER_ID
+        sync: false
+      - key: META_POSTS_DIARIO
+        value: "1"
+      - key: META_HORARIO_POST
+        value: "12:00"
+      - key: CLAUDE_API_KEY
+        sync: false
+      - key: CLAUDE_MODEL
+        value: claude-opus-5
+      - key: AGENTE_INSTAGRAM
+        value: "@licitaagente"
+      # Link que aparece nas legendas ("Teste grátis: ...") — aponta para a
+      # landing page publicada (vendas). Se não setar, usa o app.
+      - key: AGENTE_LINK
+        value: "https://samuelcruz0.github.io/agente-licita-landing/"
